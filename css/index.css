@@ -1,0 +1,194 @@
+.header{
+	height: 1.2rem;
+	background-color: rgba(167,213,234,0.2);
+	/*background: #e4393c;*/
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+.header>div{
+	float: left;
+}
+.saoma{
+	width: 0.64rem;
+	height: 0.64rem;
+	background: url(../img/saoma.png) 0 0 no-repeat;
+	background-size: contain;
+	-webkit-background-size:contain; 
+	margin:0.2666667rem 0 0 0.4rem;
+}
+.search-box{
+	width: 56%;
+	height: 0.8rem;
+	margin-top:0.186667rem;
+	line-height: 0.8rem;
+	color: white;	
+	border-radius: 0.266667rem;
+	text-align: center;
+	background:rgba(0,0,0,0.2) url(../img/search.png) 0.2rem center no-repeat;
+	position: absolute;
+	left: 50%;
+	margin-left: -28%;
+	/*兼容不是ipone的真机*/
+	-webkit-background-size:0.48rem 0.506667rem; 
+}
+.header>.msg{
+	width: 0.746667rem;
+	height:0.613333rem;
+	margin:0.293333rem 0.4rem 0 0.293333rem;
+	float: right;
+	background:url(../img/msg.png) 0 0 no-repeat;
+	background-size: contain;
+}
+.header>.cart{
+	width: 0.6rem;
+	height: 0.6rem;
+	float: right;
+	background:url(../img/cart.png) center center no-repeat;
+	margin-top: 0.2933333rem;
+	position: relative;
+	-webkit-background-size:contain;
+}
+.cart>span{
+	position: absolute;
+	width: 0.32rem;
+	height: 0.32rem;
+	top: -0.16rem;
+	right: -0.16rem;
+	background-color: #fd3422;
+	border-radius: 50%;
+	color: white;
+	text-align: center;
+	line-height: 0.32rem;
+	font-size: 0.266667rem;
+}
+/*sass方式：以编程的方式写css样式*/
+[data-dpr="2"].cart>span{
+	font-size: 20x;
+}
+[data-dpr="3"].cart>span{
+	font-size: 30x;
+}
+
+/*头部完成*/
+/*底部固定栏开始*/
+.banner{
+	height: 6.106667rem;
+}
+.banner img{
+	width: 10rem;
+}
+.banner a{
+	/*float: left;*/
+	font-size: 0;
+}
+.nav{
+	width:100%;
+	height: 1.333333rem;
+	box-sizing:border-box;
+	border-top: #bfbec3;
+	background-color: white;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+}
+.nav-item{
+	float: left;
+	width: 20%;
+	height: 100%;
+}
+.nav-item.active>p{
+	color: #ffc600;
+}
+.nav-item>p{
+	text-align: center;
+	color: #989898;
+	line-height: 0.45rem;
+}
+.home{
+	width: 0.666667rem;
+	height: 0.666667rem;
+	background: url(../img/icon-house-s.png) 0 0 no-repeat;
+	background-size: contain;
+	margin:0.16rem auto 0;
+	-webkit-background-size:contain;
+}
+.cate{
+	width: 0.666667rem;
+	height: 0.666667rem;
+	background: url(../img/icon-cate.png) 0 0 no-repeat;
+	background-size: contain;
+	margin:0.16rem auto 0;
+	-webkit-background-size:contain;
+}
+.corp{
+	width: 0.666667rem;
+	height: 0.666667rem;
+	background: url(../img/icon-corp.png) 0 0 no-repeat;
+	background-size: contain;
+	margin:0.16rem auto 0;
+	-webkit-background-size:contain;
+}
+.qian{
+	width: 0.666667rem;
+	height: 0.666667rem;
+	background: url(../img/icon-treasure.png) 0 0 no-repeat;
+	background-size: contain;
+	margin:0.16rem auto 0;
+	-webkit-background-size:contain;
+}
+.me{
+	width: 0.666667rem;
+	height: 0.666667rem;
+	background: url(../img/icon-me.png) 0 0 no-repeat;
+	background-size: contain;
+	margin:0.16rem auto 0;
+	-webkit-background-size:contain;
+}
+/*内容盒子*/
+.content-box{
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 1.33333333rem;
+	overflow-y: auto;
+	background-color: #f0eff5;
+}
+.p-list-box{
+	height: 4.506667rem;
+	background-color: #ffffff;
+}
+.p-list-title{
+	background: url(../img/tag.png) 0.4rem 0.373333rem/1.866667rem 0.533333rem no-repeat;
+	height: 1.2rem;	
+}
+.more{
+	float: right;/*父容器有高度所以不用清浮动*/
+	background: url(../img/more.png) 0 0/contain no-repeat;
+	width: 1.2rem;
+	height: 0.533333rem;
+	display: block;
+	margin:0.453333rem 0.4rem 0 0;
+	-webkit-background-size:contain;
+}
+.p-list{
+	/*width: 2.826667rem;*/
+	height: 3.306667rem;
+	overflow-x:auto;
+	overflow-y:hidden;
+}
+.p-list-item{
+	width: 2.8rem;
+	height: 2.8rem;
+	text-align: center;
+	float: left;
+}
+.p-list-item>p{
+	margin-top: 1.8rem;
+}
+.container{
+	width: 14rem;
+	overflow: hidden;
+}

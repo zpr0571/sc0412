@@ -1,0 +1,23 @@
+1,引入flexible.js和flexible_css.js（尽可能的放上面）
+2,ui所给图像为750*1344   ipone对应像素为375*667
+3,独立像素（UI给）：真实像素（手机）750:375=dpr=2 1rem=75px
+   90/2/75=0.6
+   宽 高
+
+git-hub 共享项目：
+   1,git-hub账号申请,并登录
+   2,start a project  ->  填写项目名称，确定
+   3,进入https://github.com/zpr0571/sc页面不要关闭，里面有秘钥等代码
+   4,依赖于git，要在本地安装git（Tower里面下载git并安装，全部为默认选项）
+   5,打开git bash控制面板
+   6，
+	   1）配置用户信息
+		$ git config --global user.name "Your Name"
+		$ git config --global user.email "email@example.com"
+		$ git config --global push.default matching
+
+	   2）生成ssh秘钥
+        $ ssh-keygen -t rsa
+
+       3）生成公钥给项目管理员
+         将在计算机里面的Administrator中的.ssh中公有秘钥复制粘贴到git-hub账号中https://github.com/settings中
